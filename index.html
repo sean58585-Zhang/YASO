@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>我的個人網站</title>
+<title>張凱軒的網站</title>
 <style>
 :root{--bg:#f6f7f4;--fg:#222;--card:#fff;--main:#4a6a58;--acc:#8cc63f;--line:#d6dad2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b201d;--fg:#eee;--card:#262d29;--line:#3a443e}}
@@ -31,117 +31,112 @@ footer{text-align:center;padding:20px;font-size:.85rem;opacity:.7}
 </head>
 <body>
 <header>
-  <h1>我的個人網站</h1>
-  <nav id="nav">
-    <a href="#home">首頁</a>
-    <a href="#about">個人介紹</a>
-    <a href="#media">影音相簿</a>
-    <a href="#stats">統計圖表</a>
-    <a href="#friends">同學網站</a>
-  </nav>
+<h1>我的個人網站</h1>
+<nav id="nav">
+<a href="#home">首頁</a>
+<a href="#about">個人介紹</a>
+<a href="#media">影音相簿</a>
+<a href="#stats">統計圖表</a>
+<a href="#friends">同學網站</a>
+</nav>
 </header>
-
 <main>
 <section id="home">
-  <div class="card">
-    <h2>歡迎來到我的網站</h2>
-    <p>這是「網頁設計」課程作業，網站由多個網頁組成，由首頁連到各個子頁面。</p>
-  </div>
-  <div class="card">
-    <h3>網頁架構圖</h3>
-    <div class="wrap">
-    <svg viewBox="0 0 640 230" width="100%" role="img" aria-label="網頁架構圖">
-      <g stroke="#888" stroke-width="2" fill="none">
-        <path d="M320 70V105M80 105H560M80 105V135M240 105V135M400 105V135M560 105V135"/>
-      </g>
-      <g font-size="16" text-anchor="middle" font-family="sans-serif" fill="#222">
-        <rect x="260" y="20" width="120" height="50" rx="6" fill="#7fb2e5" stroke="#222"/><text x="320" y="51">首頁</text>
-        <rect x="20" y="135" width="120" height="50" rx="6" fill="#f5b335" stroke="#222"/><text x="80" y="166">個人介紹</text>
-        <rect x="180" y="135" width="120" height="50" rx="6" fill="#8cc63f" stroke="#222"/><text x="240" y="166">影音相簿</text>
-        <rect x="340" y="135" width="120" height="50" rx="6" fill="#1fa79a" stroke="#222"/><text x="400" y="166">統計圖表</text>
-        <rect x="500" y="135" width="120" height="50" rx="6" fill="#f26a1b" stroke="#222"/><text x="560" y="166">同學網站</text>
-      </g>
-    </svg>
-    </div>
-  </div>
+<div class="card">
+<h2>歡迎來到我的網站</h2>
+<p>這是「網頁設計」課程作業，網站由多個網頁組成，由首頁連到各個子頁面。</p>
+</div>
+<div class="card">
+<h3>網頁架構圖</h3>
+<div class="wrap">
+<svg viewBox="0 0 640 230" width="100%" role="img" aria-label="網頁架構圖">
+<g stroke="#888" stroke-width="2" fill="none">
+<path d="M320 70V105M80 105H560M80 105V135M240 105V135M400 105V135M560 105V135"/>
+</g>
+<g font-size="16" text-anchor="middle" font-family="sans-serif" fill="#222">
+<rect x="260" y="20" width="120" height="50" rx="6" fill="#7fb2e5" stroke="#222"/><text x="320" y="51">首頁</text>
+<rect x="20" y="135" width="120" height="50" rx="6" fill="#f5b335" stroke="#222"/><text x="80" y="166">個人介紹</text>
+<rect x="180" y="135" width="120" height="50" rx="6" fill="#8cc63f" stroke="#222"/><text x="240" y="166">影音相簿</text>
+<rect x="340" y="135" width="120" height="50" rx="6" fill="#1fa79a" stroke="#222"/><text x="400" y="166">統計圖表</text>
+<rect x="500" y="135" width="120" height="50" rx="6" fill="#f26a1b" stroke="#222"/><text x="560" y="166">同學網站</text>
+</g>
+</svg>
+</div>
+</div>
 </section>
-
 <section id="about">
-  <div class="card">
-    <h2>個人介紹</h2>
-    <p>大家好，我是 <strong>（你的名字）</strong>，就讀 <strong>（學校／科系）</strong>。</p>
-    <p>興趣：（例如：看電影、旅行、聽音樂）。</p>
-  </div>
+<div class="card">
+<h2>個人介紹</h2>
+<p>大家好，我是 <strong>張凱軒</strong>，就讀 <strong>虎科資工</strong>。</p>
+<p>興趣：旅行、聽音樂。</p>
+</div>
 </section>
-
 <section id="media">
-  <div class="card">
-    <h2>我最喜歡的影片</h2>
-    <div class="video">
-<iframe width="1044" height="470" src="https://www.youtube.com/embed/UNgidXWr5S8" title="野兽先辈采访篇" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
-  </div>
-  <div class="card">
-    <h2>我最喜歡的照片</h2>
-    <div class="grid">
-      <!-- 把 src 換成你自己的照片檔名，例如 photo1.jpg -->
-      <figure style="margin:0"><img src="CS.jpg" alt="會員1" onerror="this.src=ph(1)"><figcaption>會員1</figcaption></figure>
-      <figure style="margin:0"><img src="CSGO.jpg" alt="會員2" onerror="this.src=ph(2)"><figcaption>會員2</figcaption></figure>
-    </div>
-  </div>
+<div class="card">
+<h2>我最喜歡的影片</h2>
+<div class="video">
+<iframe width="1044" height="470" src="https://youtube.com" title="野兽先辈采访篇" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+<div class="card">
+<h2>我最喜歡的照片</h2>
+<div class="grid">
+<!-- 把 src 換成你自己的照片檔名，例如 photo1.jpg -->
+<figure style="margin:0"><img src="CS.jpg" alt="會員1" onerror="this.src=ph(1)"><figcaption>會員1</figcaption></figure>
+<figure style="margin:0"><img src="CSGO.jpg" alt="會員2" onerror="this.src=ph(2)"><figcaption>會員2</figcaption></figure>
+</div>
+</div>
 </section>
-
 <section id="stats">
-  <div class="card">
-    <h2>統計圖表：每週學習時數（小時）</h2>
-    <canvas id="chart" width="720" height="360"></canvas>
-    <p>資料可在 script 內的 <code>data</code> 陣列修改。</p>
-  </div>
+<div class="card">
+<h2>統計圖表：每週玩手機時數（小時）</h2>
+<canvas id="chart" width="720" height="360"></canvas>
+<p>資料可在 script 內的 <code>data</code> 陣列修改。</p>
+</div>
 </section>
-
 <section id="friends">
-  <div class="card">
-    <h2>同學的網站</h2>
-    <ul>
-      <!-- 換成三位同學網站的網址與名字 -->
-      <li><a href="https://example.com/classmate1" target="_blank" rel="noopener">同學一的網站</a></li>
-      <li><a href="https://example.com/classmate2" target="_blank" rel="noopener">同學二的網站</a></li>
-      <li><a href="https://example.com/classmate3" target="_blank" rel="noopener">同學三的網站</a></li>
-    </ul>
-  </div>
+<div class="card">
+<h2>同學的網站</h2>
+<ul>
+<!-- 換成三位同學網站的網址與名字 -->
+<li><a href="https://example.com" target="_blank" rel="noopener">同學一的網站</a></li>
+<li><a href="https://example.com" target="_blank" rel="noopener">同學二的網站</a></li>
+<li><a href="https://example.com" target="_blank" rel="noopener">同學三的網站</a></li>
+</ul>
+</div>
 </section>
 </main>
 <footer>© 我的個人網站 ‧ 網頁設計作業</footer>
-
 <script>
 // 沒有照片時顯示的占位圖
 function ph(n){
-  var s='<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260"><rect width="100%" height="100%" fill="#b9c8bd"/><text x="200" y="136" font-size="24" text-anchor="middle" fill="#345">照片 '+n+'</text></svg>';
-  return 'data:image/svg+xml;utf8,'+encodeURIComponent(s);
+var s='<svg xmlns="http://w3.org" width="400" height="260"><rect width="100%" height="100%" fill="#b9c8bd"/><text x="200" y="136" font-size="24" text-anchor="middle" fill="#345">照片 '+n+'</text></svg>';
+return 'data:image/svg+xml;utf8,'+encodeURIComponent(s);
 }
 // 簡易分頁切換
 function route(){
-  var id=(location.hash||'#home').slice(1);
-  if(!document.getElementById(id)) id='home';
-  document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id===id)});
-  document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)});
-  if(id==='stats') drawChart();
+var id=(location.hash||'#home').slice(1);
+if(!document.getElementById(id)) id='home';
+document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id===id)});
+document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)});
+if(id==='stats') drawChart();
 }
-// 長條圖（純 JavaScript + Canvas）
-var data=[{l:'週一',v:3},{l:'週二',v:5},{l:'週三',v:2},{l:'週四',v:6},{l:'週五',v:4},{l:'週六',v:7},{l:'週日',v:1}];
+// 長條圖數據（已調整為更符合玩手機的時數）
+var data=[{l:'週一',v:3},{l:'週二',v:4},{l:'週三',v:3},{l:'週四',v:4},{l:'週五',v:6},{l:'週六',v:9},{l:'週日',v:8}];
 function drawChart(){
-  var c=document.getElementById('chart'),g=c.getContext('2d');
-  var dark=matchMedia('(prefers-color-scheme: dark)').matches;
-  var fg=dark?'#eee':'#222';
-  g.clearRect(0,0,c.width,c.height);
-  var L=50,B=c.height-40,T=20,W=c.width-L-20,max=Math.max.apply(null,data.map(function(d){return d.v}))+1;
-  g.font='16px sans-serif';g.fillStyle=fg;g.strokeStyle='#888';
-  for(var i=0;i<=max;i++){var y=B-(B-T)*i/max;g.beginPath();g.moveTo(L,y);g.lineTo(L+W,y);g.globalAlpha=.25;g.stroke();g.globalAlpha=1;g.textAlign='right';g.fillText(i,L-8,y+5)}
-  var bw=W/data.length;
-  data.forEach(function(d,i){
-    var h=(B-T)*d.v/max,x=L+i*bw+bw*.2;
-    g.fillStyle='#4a6a58';g.fillRect(x,B-h,bw*.6,h);
-    g.fillStyle=fg;g.textAlign='center';g.fillText(d.l,x+bw*.3,B+24);g.fillText(d.v,x+bw*.3,B-h-6);
-  });
+var c=document.getElementById('chart'),g=c.getContext('2d');
+var dark=matchMedia('(prefers-color-scheme: dark)').matches;
+var fg=dark?'#eee':'#222';
+g.clearRect(0,0,c.width,c.height);
+var L=50,B=c.height-40,T=20,W=c.width-L-20,max=Math.max.apply(null,data.map(function(d){return d.v}))+1;
+g.font='16px sans-serif';g.fillStyle=fg;g.strokeStyle='#888';
+for(var i=0; i<=max; i++){var y=B-(B-T)*i/max;g.beginPath();g.moveTo(L,y);g.lineTo(L+W,y);g.globalAlpha=.25;g.stroke();g.globalAlpha=1;g.textAlign='right';g.fillText(i,L-8,y+5)}
+var bw=W/data.length;
+data.forEach(function(d,i){
+var h=(B-T)*d.v/max,x=L+i*bw+bw*.2;
+g.fillStyle='#4a6a58';g.fillRect(x,B-h,bw*.6,h);
+g.fillStyle=fg;g.textAlign='center';g.fillText(d.l,x+bw*.3,B+24);g.fillText(d.v,x+bw*.3,B-h-6);
+});
 }
 addEventListener('hashchange',route);route();
 </script>
