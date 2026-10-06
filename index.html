@@ -31,7 +31,7 @@ footer{text-align:center;padding:20px;font-size:.85rem;opacity:.7}
 </head>
 <body>
 <header>
-<h1>我的個人網站</h1>
+<h1>張凱軒的網站</h1>
 <nav id="nav">
 <a href="#home">首頁</a>
 <a href="#about">個人介紹</a>
@@ -66,23 +66,22 @@ footer{text-align:center;padding:20px;font-size:.85rem;opacity:.7}
 <section id="about">
 <div class="card">
 <h2>個人介紹</h2>
-<p>大家好，我是 <strong>張凱軒<strong>，就讀 <strong>虎科資工<strong>。</p>
-<p>興趣：旅行、聽音樂。<p>
+<p>大家好，我是 <strong>張凱軒</strong>，就讀 <strong>虎科資工</strong>。</p>
+<p>興趣：旅行、聽音樂。</p>
 </div>
 </section>
 <section id="media">
 <div class="card">
 <h2>我最喜歡的影片</h2>
 <div class="video">
-<iframe width="1044" height="470" src="https://youtube.com" title="野兽先辈采访篇" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/m7A-BqlAGuM" title="114514惡臭原版音頻（無水印）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
 <div class="card">
 <h2>我最喜歡的照片</h2>
 <div class="grid">
-<!-- 把 src 換成你自己的照片檔名，例如 photo1.jpg -->
-<figure style="margin:0"><img src="CS.jpg" alt="會員1" onerror="this.src=ph(1)"><figcaption>會員1</figcaption></figure>
-<figure style="margin:0"><img src="CSGO.jpg" alt="會員2" onerror="this.src=ph(2)"><figcaption>會員2</figcaption></figure>
+<figure style="margin:0"><img src="CS.jpg" alt="CS" onerror="this.onerror=null;this.src=ph(1)"><figcaption>CS</figcaption></figure>
+<figure style="margin:0"><img src="CSGO.jpg" alt="CSGO" onerror="this.onerror=null;this.src=ph(2)"><figcaption>CSGO</figcaption></figure>
 </div>
 </div>
 </section>
@@ -97,8 +96,6 @@ footer{text-align:center;padding:20px;font-size:.85rem;opacity:.7}
 <div class="card">
 <h2>同學的網站</h2>
 <ul>
-<!-- 換成三位同學網站的網址與名字 -->
-<!-- 三位同學的網站 -->
 <li><a href="https://jinzuha.github.io/web/index.html" target="_blank" rel="noopener">同學一的網站</a></li>
 <li><a href="https://lck0408.github.io/web" target="_blank" rel="noopener">同學二的網站</a></li>
 <li><a href="https://87mark0109.github.io/yifanxiaogg/" target="_blank" rel="noopener">同學三的網站</a></li>
@@ -106,14 +103,12 @@ footer{text-align:center;padding:20px;font-size:.85rem;opacity:.7}
 </div>
 </section>
 </main>
-<footer>© 我的個人網站 ‧ 網頁設計作業</footer>
+<footer>© 張凱軒 ‧ 網頁設計作業</footer>
 <script>
-// 沒有照片時顯示的占位圖
 function ph(n){
-var s='<svg xmlns="http://w3.org" width="400" height="260"><rect width="100%" height="100%" fill="#b9c8bd"/><text x="200" y="136" font-size="24" text-anchor="middle" fill="#345">照片 '+n+'</text></svg>';
+var s='<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260"><rect width="100%" height="100%" fill="#b9c8bd"/><text x="200" y="136" font-size="24" text-anchor="middle" fill="#345">照片 '+n+'</text></svg>';
 return 'data:image/svg+xml;utf8,'+encodeURIComponent(s);
 }
-// 簡易分頁切換
 function route(){
 var id=(location.hash||'#home').slice(1);
 if(!document.getElementById(id)) id='home';
@@ -121,7 +116,6 @@ document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on'
 document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)});
 if(id==='stats') drawChart();
 }
-// 長條圖數據（已調整為更符合玩手機的時數）
 var data=[{l:'週一',v:3},{l:'週二',v:4},{l:'週三',v:3},{l:'週四',v:4},{l:'週五',v:6},{l:'週六',v:9},{l:'週日',v:8}];
 function drawChart(){
 var c=document.getElementById('chart'),g=c.getContext('2d');
